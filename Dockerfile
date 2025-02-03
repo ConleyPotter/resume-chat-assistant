@@ -1,5 +1,5 @@
 # Use the specified Python runtime as the base image
-FROM python:3.12.3-slim
+FROM --platform=$BUILDPLATFORM python:3.12.3-slim
 
 # Set the working directory in the container
 WORKDIR /app

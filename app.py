@@ -35,7 +35,7 @@ def main(user_message_content: str):
 
 # Create a Flask app
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})  # Allow only requests from localhost:3000 to /api/*
+CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})  # Allow only requests from localhost:5173 to /api/*
 
 # Define a route for the chat API
 @app.route('/api/chat', methods=['POST'])
